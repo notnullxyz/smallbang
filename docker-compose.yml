@@ -14,7 +14,7 @@ services:
       container_name: smallbang-webserver
       working_dir: /src
       volumes:
-          - .:/src
+          - ./src:/src
           - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf
       ports:
        - "9999:80"
@@ -24,6 +24,6 @@ services:
       container_name: smallbang-php-fpm
       working_dir: /src
       volumes:
-        - .:/src
+        - ./src:/src
         - ./php-fpm/php-ini-overrides.ini:/etc/php/7.2/fpm/conf.d/99-overrides.ini
 
