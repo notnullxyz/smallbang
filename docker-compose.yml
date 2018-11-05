@@ -21,6 +21,8 @@ services:
 
     php-fpm:
       build: php-fpm
+      env_file:
+      - .env
       container_name: smallbang-php-fpm
       working_dir: /src
       volumes:
