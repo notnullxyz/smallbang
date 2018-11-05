@@ -1,0 +1,17 @@
+{
+    "name": "marlonv/smallbang",
+    "description": "Universe manager as a service",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Marlon B van der Linde",
+            "email": "marlonv@protonmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Core\\" : "src/class"
+        }
+    }
+}

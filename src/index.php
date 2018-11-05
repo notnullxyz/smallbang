@@ -1,8 +1,12 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
-require_once '../Confessor.php';
+print_r(__DIR__);
 
-$confessor = new Confessor();
+require_once __DIR__ .  "/../vendor/autoload.php";
+
+$confessor = new \Core\Confessor();
 
 if ($confessor->get('APP_ENV') === 'debug') {
     error_reporting(E_ALL);
